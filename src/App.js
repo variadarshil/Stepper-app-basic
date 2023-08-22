@@ -5,23 +5,19 @@ function App() {
   const [steps, setSteps] = useState([
     {
       step: 1,
-      activated: false,
-      text: 'Step1'
+      activated: false
     },
     {
       step: 2,
-      activated: false,
-      text: 'Step2'
+      activated: false
     },
     {
       step: 3,
-      activated: false,
-      text: 'Step3'
+      activated: false
     },
     {
       step: 4,
-      activated: false,
-      text: 'Step4'
+      activated: false
     }
   ]);
   const [currStep, setCurrStep] = useState(null);
