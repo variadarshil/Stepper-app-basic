@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  width: 600px;
+  height: 150px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.steps-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.steps {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+.activated {
+  background-color: aqua;
+  transition: background-color 0.3s ease-in 0.3s;
+}
+
+.steps-line {
+  height: 2px;
+  background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
