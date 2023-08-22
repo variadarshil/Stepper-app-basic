@@ -37,7 +37,7 @@ function App() {
   const progressLine = (100 / (steps.length - 1)) * currStep;
   return (
     <div className="App">
-      <div style={{position: 'relative'}}>
+      <div style={{ position: 'relative' }}>
         <div className='steps-wrapper'>
           {steps.map((ele, i) => {
             return <div className={`steps ${ele.activated ? 'activated' : null}`} onClick={() => activateSteps(i)} key={i}>{ele.step}</div>
